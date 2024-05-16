@@ -1,13 +1,16 @@
 package it.aesys.springbatch.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
 
 @Table(name ="players")
 @Entity
@@ -18,7 +21,7 @@ import org.springframework.data.annotation.Id;
 public class Player {
 
     @Id
-    private int id;
+    private Integer id;
     private String firstname;
     private String lastname;
     private String team;
